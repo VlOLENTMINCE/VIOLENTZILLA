@@ -1,0 +1,26 @@
+import random
+import asyncio
+import aiohttp
+from discord import Game
+from discord.ext.commands import Bot
+BOT_PREFIX = ("?", "!")
+TOKEN = "NzMzOTUzNzQ3MjM5MzA1Mjg2.XxOENA.UrlSmq7bAanGkiRizfteEuGE47I"  
+  # Get at discordapp.com/developers
+  /applications/me
+client = Bot(command_prefix
+  =BOT_PREFIX)
+@client.command(name='8ball',
+                description="Answers 
+                  a yes/no question."
+                  ,
+                brief="Answers from 
+                  the beyond.",
+                aliases=['eight_ball'
+                  , 'eightball', '8
+                  -ball'],
+                pass_context=True)
+async def eight_ball(context):
+    possible_responses = [
+        'Hell no',
+        'Prolly not',
+        'Idk bro',
